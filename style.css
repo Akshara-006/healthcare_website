@@ -1,0 +1,30 @@
+ body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+h1 {
+  color: #2c3e50;
+}
+
+/* === Custom Popup Message === */
+.custom-popup {
+  position: fixed;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #20c997;
+  color: white;
+  padding: 16px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: bottom 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  z-index: 9999;
+}
+
+.custom-popup.show {
+  bottom: 30px;
+  opacity: 1;
+}

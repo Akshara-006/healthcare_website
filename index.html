@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HealthHabor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+       <link rel="stylesheet" href="style.css">
+    <style>
+	body, html {
+	   margin: 0;
+	   padding: 0;
+	   height: 100%;
+	   font-family: 'Segoe UI', sans-serif;}
+
+.hero-section {
+  background-image: url('images/health.png'); /* background image path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+
+.overlay {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-buttons .btn {
+  margin: 10px;
+  min-width: 200px;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+</style>
+  </head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #20c997;">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+	<img src="images/healthharbor_logo.png" alt="HealthHarbor Logo" width="40" 	height="40" class="me-2">
+  	<span class="text-white fw-bold">HealthHarbor</span>
+      </a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="doctors.html">Doctors</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="appointment.html">Book Appointment</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="stats.html">Health Stats</a></li>
+	  <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="overlay">
+      <h1 class="display-5 fw-bold">Your life. Our passion.</h1>
+      <h2 class="lead"><strong>Discover HealthHabor<strong></h2>
+      <div class="hero-buttons">
+        <a href="locations.html" class="btn btn-primary">Find a care location</a>
+        <a href="doctors.html" class="btn btn-outline-light">Find a doctor</a>
+        <a href="appointment.html" class="btn btn-success">Schedule an appointment</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
